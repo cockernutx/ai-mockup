@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameForge AI - Game Engine Interface</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white h-screen flex flex-col">
+
+  <!-- Sidebar -->
+  <div class="flex flex-grow">
+    <aside class="w-1/4 bg-gray-800 h-full p-6">
+      <h2 class="text-2xl font-bold text-green-400 mb-6">GameForge AI</h2>
+
+      <!-- Asset Controls -->
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-white">Asset Generator</h3>
+        <p class="text-sm text-gray-400 mb-2">Describe your asset, and GameForge AI will generate it for you.</p>
+        <textarea class="w-full p-2 bg-gray-700 rounded text-gray-300 mb-4" placeholder="e.g., 'a fierce dragon with red scales and golden wings'"></textarea>
+        <button class="w-full py-2 bg-green-500 text-white rounded font-bold hover:bg-green-600">Generate Asset</button>
+      </div>
+
+      <!-- Level Design Controls -->
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-white">Level Designer</h3>
+        <p class="text-sm text-gray-400 mb-2">Configure your level’s environment.</p>
+        <select class="w-full p-2 bg-gray-700 rounded text-gray-300 mb-4">
+          <option>Choose Environment</option>
+          <option>Forest</option>
+          <option>Dungeon</option>
+          <option>Castle</option>
+          <option>Space Station</option>
+        </select>
+        <button class="w-full py-2 bg-green-500 text-white rounded font-bold hover:bg-green-600">Generate Level</button>
+      </div>
+
+      <!-- Mechanics Controls -->
+      <div>
+        <h3 class="text-xl font-semibold text-white">Mechanics Builder</h3>
+        <p class="text-sm text-gray-400 mb-2">Add gameplay elements and interactions.</p>
+        <div class="flex flex-col space-y-2">
+          <label class="flex items-center">
+            <input type="checkbox" class="form-checkbox bg-gray-700 text-green-500 rounded mr-2" checked>
+            Enable Gravity
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="form-checkbox bg-gray-700 text-green-500 rounded mr-2">
+            Player Health System
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="form-checkbox bg-gray-700 text-green-500 rounded mr-2">
+            Enemy AI
+          </label>
+          <label class="flex items-center">
+            <input type="checkbox" class="form-checkbox bg-gray-700 text-green-500 rounded mr-2">
+            Collectible Items
+          </label>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Editor View -->
+    <main class="flex-grow bg-gray-900 p-8">
+      <div class="flex justify-between items-center mb-6">
+        <h1 class="text-3xl font-bold text-green-400">Game Editor</h1>
+        <button class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded font-bold">Preview Game</button>
+      </div>
+      
+      <!-- Game Preview Area -->
+      <div class="bg-gray-800 rounded-lg p-6 h-4/5">
+        <h2 class="text-2xl text-white mb-4">Live Preview</h2>
+        <div class="border border-gray-600 rounded h-full flex items-center justify-center text-gray-400">
+          <p>Game preview will appear here as assets and levels are created.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Bottom Toolbar -->
+  <footer class="bg-gray-800 p-4 flex justify-between">
+    <div class="flex space-x-4">
+      <button class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded font-bold">Undo</button>
+      <button class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded font-bold">Redo</button>
+      <button class="bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded font-bold">Save Project</button>
+    </div>
+    <p class="text-gray-400">AI-powered game creation made easy.</p>
+  </footer>
+
+</body>
+</html>
