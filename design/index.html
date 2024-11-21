@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GameForge AI - Filosofia de Design do Site</title>
+  <title>Conclusão do Projeto de Design de Interfaces</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     html {
       scroll-behavior: smooth;
     }
   </style>
 </head>
+
 <body class="bg-gray-900 text-white">
 
   <!-- Cabeçalho -->
@@ -28,91 +32,91 @@
     </div>
   </header>
 
-  <!-- Seção Hero -->
-  <section class="bg-gray-900 py-20 text-center">
-    <div class="container mx-auto px-4">
-      <h2 class="text-5xl font-extrabold text-white">O Design por Trás do GameForge AI</h2>
-      <p class="mt-4 text-xl text-gray-300">Descubra como nosso site é projetado para oferecer uma experiência fluida e envolvente para criadores e desenvolvedores.</p>
+  <!-- Hero -->
+  <section class="hero min-h-screen " style="background-image: url(../images/design.png);">
+    <div class="hero-overlay bg-opacity-50"></div>
+    <div class="hero-content text-neutral-content text-center">
+     
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Design de Interfaces Modernas</h1>
+        <p class="mb-5">
+          Uma abordagem que combina funcionalidade e estética, garantindo uma experiência imersiva e envolvente para os usuários.
+        </p>
+      </div>
     </div>
   </section>
 
-  <!-- Seção Filosofia -->
-  <section id="filosofia" class="py-20 bg-gray-800">
-    <div class="container mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-green-400">Nossa Filosofia de Design</h3>
-      <p class="mt-8 text-lg text-gray-300 text-center">
-        O site do GameForge AI é projetado com uma abordagem centrada no usuário, priorizando simplicidade, clareza e acessibilidade. Acreditamos que a tecnologia deve capacitar os criadores sem sobrecarregá-los. Por isso, cada aspecto do site é elaborado para tornar as informações e ferramentas fáceis de encontrar e envolventes.
-      </p>
+  <!-- Seção Tecnologias -->
+  <section id="tecnologias" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-green-400">Tecnologias Utilizadas</h2>
+      <p class="mt-4 text-gray-300">A base tecnológica robusta garante responsividade, acessibilidade e escalabilidade no projeto.</p>
+      <div class="mt-10 grid gap-8 md:grid-cols-3">
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-green-400">TailwindCSS</h3>
+          <p class="mt-2 text-gray-300">Estilização moderna e responsiva com classes utilitárias.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-green-400">DaisyUI</h3>
+          <p class="mt-2 text-gray-300">Componentes pré-construídos para acelerar o desenvolvimento.</p>
+        </div>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-green-400">HTML Responsivo</h3>
+          <p class="mt-2 text-gray-300">Estrutura compatível com múltiplos dispositivos e navegadores.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Design -->
+  <section id="design" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-green-400">Design Atraente e Funcional</h2>
+      <p class="mt-4 text-gray-300">Uma hierarquia visual clara e um fluxo intuitivo guiam os usuários de forma eficiente.</p>
+      <img src="../images/example_design_image.png" alt="Exemplo de design" class="mt-8 mx-auto rounded-lg shadow-lg">
+      <p class="text-sm font-extralight mt-2">Imagem de exemplo para demonstrar um dos nossos exemplos de design</p>
+    </div>
+  </section>
+
+  <!-- Seção UX e UI -->
+  <section id="ux-ui" class="py-20 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold text-green-400">Foco em UX e UI</h2>
+      <p class="mt-4 text-gray-300">A experiência do usuário é priorizada com design centrado e componentes intuitivos.</p>
       <div class="mt-10 grid gap-8 md:grid-cols-2">
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-          <h4 class="text-2xl font-semibold text-green-400">Simplicidade</h4>
-          <p class="mt-2 text-gray-300">Priorizamos layouts limpos e navegação intuitiva para ajudar os usuários a focar em seus objetivos sem distrações.</p>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-green-400">Experiência Imersiva</h3>
+          <p class="mt-2 text-gray-300">Interações fluídas e animações suaves proporcionam um ambiente envolvente.</p>
         </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-          <h4 class="text-2xl font-semibold text-green-400">Clareza</h4>
-          <p class="mt-2 text-gray-300">Nosso conteúdo é estruturado para guiar os usuários sem esforço, garantindo que conceitos complexos sejam explicados de forma clara.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-          <h4 class="text-2xl font-semibold text-green-400">Engajamento</h4>
-          <p class="mt-2 text-gray-300">Visuais dinâmicos e demonstrações interativas cativam os usuários, mostrando as capacidades do GameForge AI de forma eficaz.</p>
-        </div>
-        <div class="bg-gray-900 p-6 rounded-lg shadow-lg text-center">
-          <h4 class="text-2xl font-semibold text-green-400">Responsividade</h4>
-          <p class="mt-2 text-gray-300">Nosso design se adapta perfeitamente a diferentes dispositivos, garantindo uma experiência fluida em desktops, tablets e celulares.</p>
+        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-green-400">Design Intuitivo</h3>
+          <p class="mt-2 text-gray-300">Navegação simplificada e clareza visual garantem acessibilidade.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Seção Recursos de Design -->
-  <section id="recursos" class="py-20 bg-gray-900">
-    <div class="container mx-auto px-4">
-      <h3 class="text-4xl font-bold text-center text-green-400">Principais Recursos de Design</h3>
-      <div class="mt-10 space-y-10">
+  <!-- Conclusão -->
+  <section id="conclusao" class="py-20 bg-green-500 text-gray-900">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-4xl font-bold">Conclusão</h2>
+      <p class="mt-4 text-xl">
+
+        O projeto de design de interfaces demonstrado apresenta uma abordagem moderna e funcional para a criação de plataformas interativas, focando na experiência do usuário (UX) e no apelo visual (UI). Utilizando tecnologias robustas como <b>TailwindCSS</b> e <b>DaisyUI</b>, o layout garante responsividade, acessibilidade e integração fluida com elementos interativos, como navegação intuitiva, animações suaves e seções destacadas por contraste de cores.  
         
-        <!-- Recurso 1 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h4 class="text-2xl font-semibold text-green-400">1. Navegação Intuitiva</h4>
-          <p class="mt-4 text-gray-300">A estrutura do site garante que os usuários possam encontrar facilmente as informações necessárias. Os links no cabeçalho e as seções guiam os usuários pela jornada do GameForge AI, desde entender suas capacidades até experimentar a ferramenta.</p>
-        </div>
-
-        <!-- Recurso 2 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h4 class="text-2xl font-semibold text-green-400">2. Visuais Dinâmicos</h4>
-          <p class="mt-4 text-gray-300">CSS bem estruturado e reativo para dar o usuario a melhor experiência possivel.</p>
-        </div>
-
-        <!-- Recurso 3 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h4 class="text-2xl font-semibold text-green-400">3. Acessibilidade</h4>
-          <p class="mt-4 text-gray-300">O design utiliza cores de alto contraste, tipografia limpa e layouts responsivos para garantir legibilidade e usabilidade para todos os usuários, incluindo aqueles com deficiência visual.</p>
-        </div>
-
-        <!-- Recurso 4 -->
-        <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
-          <h4 class="text-2xl font-semibold text-green-400">4. Chamadas para Ação Direcionadas</h4>
-          <p class="mt-4 text-gray-300">CTAs estrategicamente posicionados, como "Experimente Gratuitamente" e "Saiba Mais", incentivam os usuários a dar o próximo passo, melhorando as taxas de conversão sem comprometer a experiência.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- Seção Chamada para Ação -->
-  <section id="cta" class="bg-green-500 py-20 text-center">
-    <div class="container mx-auto px-4">
-      <h3 class="text-4xl font-bold text-gray-900">Quer Saber Mais?</h3>
-      <p class="mt-4 text-xl text-gray-800">Explore nosso site e veja como o design do GameForge AI oferece uma experiência perfeita.</p>
-      <a href="../engine" class="mt-8 inline-block bg-gray-900 hover:bg-gray-800 text-green-400 font-bold py-3 px-8 rounded-full shadow-lg transition">Comece Gratuitamente</a>
+        Além disso, o design prioriza a clareza na hierarquia visual, guiando o usuário através de um fluxo lógico, desde a introdução da proposta até as chamadas para ação. Componentes como depoimentos, perguntas frequentes e demonstrações visuais reforçam a confiabilidade e a atratividade da plataforma.  
+        
+        Esse projeto evidencia a importância de combinar estética com funcionalidade, utilizando práticas de design centradas no usuário e implementando as melhores tecnologias para garantir uma experiência imersiva e envolvente. A estrutura criada é adaptável, escalável e preparada para evoluções futuras, destacando-se como um exemplo de excelência no design web contemporâneo.</p>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer class="bg-gray-800 py-8 text-center">
     <div class="container mx-auto">
-      <p class="text-gray-400">&copy; 2023 GameForge AI. Todos os direitos reservados.</p>
+      <p class="text-gray-400">&copy; 2023 Design de Interfaces. Todos os direitos reservados.</p>
     </div>
   </footer>
 
 </body>
+
 </html>
