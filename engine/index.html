@@ -18,11 +18,13 @@
       dl.href = sb.value;
       preview.href = "../engine/game_preview/index.html?preview=" + sb.value.replace(".png", "").replace("../images/", "");
     }
-
+    const assets = ["dragon.jpeg", "dragon2.jpeg", "pixelquest.png", "forest.png"]
     function addAsset() {
+      const random = Math.floor(Math.random() * assets.length);
+      let asset = `../images/${assets[random]}`;
       let assetList = document.getElementById("asset-list");
       assetList.innerHTML += `  <div class="w-16 h-16 bg-gray-700 rounded overflow-hidden">
-      <img src="../images/castle.png" alt="Asset 4" class="object-cover w-full h-full" />
+      <img src="${asset}"  class="object-cover w-full h-full" />
     </div>`
     }
   </script>
