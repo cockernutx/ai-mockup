@@ -10,12 +10,14 @@
     function changeGameBox() {
       let gameBox = document.getElementById("game-box")
       let dl = document.getElementById("download-project");
+      let preview = document.getElementById("preview");
       const sb = document.querySelector('#env-selection');
       if (sb.selectedIndex == 0) {
         return;
       }
       gameBox.src = sb.value;
       dl.href = sb.value;
+      preview.href = "../engine/game_preview?preview=" + sb.value.replace(".png", "").replace("../images/", "");
     }
 
   </script>
@@ -79,7 +81,7 @@
     <main class="flex-grow bg-gray-900 p-8">
       <div class="flex justify-between items-center mb-6">
         <h1 class="text-3xl font-bold text-green-400">Game Editor</h1>
-        <button class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded font-bold">Preview Game</button>
+        <a id="preview" href="../engine/game_preview?preview=platformer" class="bg-green-500 hover:bg-green-600 text-white py-2 px-4 rounded font-bold">Preview Game</a>
       </div>
       
       <!-- Game Preview Area -->

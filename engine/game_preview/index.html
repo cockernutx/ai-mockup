@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameForge AI - Game Engine Interface</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+  
+    window.onload = () => {
+        const urlParams = new URLSearchParams(window.location.search);
+    const preview = urlParams.get('preview');
+
+    const game = document.getElementById("game");
+    game.src = "../../images/" + preview + ".png"
+    }
+
+  </script>
+</head>
+<body class="bg-gray-900 text-white h-screen flex flex-col">
+
+    <h1 class="text-6xl font-extrabold text-center p-6">GAME PREVIEW</h1>
+    <img class="rounded-lg p-12" id="game" />
+
+</body>
+</html>
